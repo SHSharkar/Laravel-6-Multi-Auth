@@ -6,7 +6,7 @@
 
 ## What it does?
 
-This a simple package to create the multi authentication feature on your Laravel 6 project. By running some simple command you can setup multi auth for your Laravel project. The package installs:
+This a simple package to create the multi authentication feature on your Laravel 6 project. By running some simple command you can setup multi authentication for your Laravel project. The package installs:
 
 -   Model
 -   Migration
@@ -165,8 +165,6 @@ public function logoutToPath() {
 -   resources/views/{guard}/
     -   Views for given guard
 
-## Changelog
+## Note: Never install configurations with same guard again after installed new version of package. So if you already installed your `admin` guard, don't install it again after you update package to latest version.
 
-### Note: Never install configurations with same guard again after installed new version of package. So if you already installed your `admin` guard, don't install it again after you update package to latest version.
-
-## Special thanks to [Piotr Łosiak (Hesto)](https://github.com/hesto/)
+Special thanks to [Piotr Łosiak (Hesto)](https://github.com/hesto/)

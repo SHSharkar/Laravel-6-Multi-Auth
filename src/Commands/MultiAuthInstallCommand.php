@@ -89,7 +89,7 @@ class MultiAuthInstallCommand extends InstallAndReplaceCommand
                 $this->installWebRoutes();
             }
 
-            $this->info('Multi Auth with ' . ucfirst($name) . ' guard successfully installed.');
+            $this->info('Laravel 6 Multi Auth with ' . ucfirst($name) . ' guard successfully installed.');
 
             return true;
         }
