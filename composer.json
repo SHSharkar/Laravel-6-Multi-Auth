@@ -1,0 +1,37 @@
+{
+    "name": "shsharkar/laravel-6-multi-auth",
+    "description": "Laravel 6 Multi Authentication",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "laravel-6-multi-auth",
+        "multi-auth",
+        "laravel-6-multi-auth"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Md. Sazzad Hossain Sharkar",
+            "email": "sh@sharkar.net",
+            "homepage": "https://github.com/SHSharkar",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">= 7.2.0"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SHSharkar\\Laravel6MultiAuth\\Laravel6MultiAuthServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "SHSharkar\\Laravel6MultiAuth\\": "src/"
+        }
+    },
+    "prefer-stable": true,
+    "homepage": "https://github.com/SHSharkar/Laravel-6-Multi-Auth"
+}
