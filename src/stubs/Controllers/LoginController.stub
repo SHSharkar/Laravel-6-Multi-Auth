@@ -52,6 +52,16 @@ class LoginController extends Controller
     }
 
     /**
+     * Get the path that we should redirect once logged out.
+     * Adaptable to {{singularSnake}} needs.
+     *
+     * @return string
+     */
+    public function logoutToPath() {
+        return redirect()->route('{{singularSlug}}.login');
+    }
+
+    /**
      * Get the guard to be used during authentication.
      *
      * @return \Illuminate\Contracts\Auth\StatefulGuard
