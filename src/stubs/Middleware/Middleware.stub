@@ -18,7 +18,7 @@ class RedirectIfNot{{singularClass}}
 	public function handle($request, Closure $next, $guard = '{{singularSnake}}')
 	{
 	    if (!Auth::guard($guard)->check()) {
-	        return redirect('{{singularSlug}}/login');
+	        return redirect()->route('{{singularSlug}}.login');
 	    }
 
 	    return $next($request);

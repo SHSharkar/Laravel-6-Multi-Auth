@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\{{singularClass}}\Auth;
 
 use App\Models\{{singularClass}};
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Contracts\Auth\StatefulGuard;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Controllers\Controller;
@@ -67,7 +68,7 @@ class RegisterController extends Controller
         return {{singularClass}}::create([
             'name' => $data['name'],
             'email' => $data['email'],
-            'password' => bcrypt($data['password']),
+            'password' => Hash::make($data['password']),
         ]);
     }
 
